@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "getpos",
+	"version": "${version}",
+	"name": "getPos();",
+	"description": "Simple HUD Compas",
+	"authors": [
+		"khasarah"
+	],
+	"contact": {
+		"homepage": "https://github.com/khasarah",
+		"sources": "https://github.com/khasarah/getPos"
+	},
+	"license": "MIT",
+	"icon": "assets/getpos/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.khasarah.getpos.GetPos"
+		],
+		"fabric-datagen": [
+			"dev.khasarah.getpos.GetPosDataGenerator"
+		],
+		"client": [
+			"dev.khasarah.getpos.GetPosClient"
+		]
+	},
+	"mixins": [
+		"getpos.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
